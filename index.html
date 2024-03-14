@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p> Qual país é o maior produtor de lixo</p>
+    <select id="questao1">
+        <option selected>escolha a alternativa</option>
+        <option value="1">EUA</option>
+        <option value="2">Brasil</option>
+        <option value="3">China</option>
+        <option value="4">Japão</option>
+    </select>
+    <br>
+
+    <p> Em qual posicão do ranking o Brasil está?</p>
+    <select id="questao2">
+        <option selected>escolha a alternativa</option>
+        <option value="1">primeiro</option>
+        <option value="2">segundo</option>
+        <option value="3">terceiro</option>
+        <option value="4">quarto</option>
+    </select>
+    <br>
+
+    <p> Quantos bilhões de lixo que foi produzido de acordo com a pessquisa?</p>
+    <select id="questao3">
+        <option selected>escolha a alternativa</option>
+        <option value="1">51,9</option>
+        <option value="2">52,8</option>
+        <option value="3">53,6</option>
+        <option value="4">54,3</option>
+    </select>
+    <br>
+
+    <p> Qual estado é o maior produtor de lixo eletrônico no Brasil?</p>
+    <select id="questao4">
+        <option selected>escolha a alternativa</option>
+        <option value="1">Rio De Janeiro</option>
+        <option value="2">Paraná</option>
+        <option value="3">São Paulo</option>
+        <option value="4">Minas Gerais</option>
+    </select>
+    <br>
+    <button id="botao">Calcular</button>
+    <script>
+
+        let q1 = document.getElementById('questao1');
+        let q2 = document.getElementById('questao2');
+        let q3 = document.getElementById('questao3');
+        let q4 = document.getElementById('questao4');
+        let botao = document.getElementById('botao');
+        
+        function verificar() {
+            let contador = 0;
+            if (q1.value == '1')
+                contador++;
+
+            if (q2.value == '4')
+                contador++;
+
+            if (q3.value == '3')
+                contador++;
+
+            if (q4.value == '3')
+                contador++;
+
+            alert(' vocẽ acertou ' + contador);
+        }
+
+        botao.addEventListener('click', verificar, false);
+    </script>
+</body>
+
+</html>
